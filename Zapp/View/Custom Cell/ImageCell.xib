@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="gTV-IL-0wX" customClass="ImageCell" customModule="Zapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMG-tn-TqS">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="400"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kRc-ST-SC8">
+                                <rect key="frame" x="0.0" y="0.0" width="371" height="400"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kRc-ST-SC8" firstAttribute="top" secondItem="BMG-tn-TqS" secondAttribute="top" id="44H-zA-Sw7"/>
+                            <constraint firstAttribute="height" constant="400" id="8RJ-Ce-OuT"/>
+                            <constraint firstAttribute="trailing" secondItem="kRc-ST-SC8" secondAttribute="trailing" id="SHV-k1-mVn"/>
+                            <constraint firstAttribute="width" constant="371" id="Zbe-pJ-wY2"/>
+                            <constraint firstItem="kRc-ST-SC8" firstAttribute="leading" secondItem="BMG-tn-TqS" secondAttribute="leading" id="nJP-yc-Yoy"/>
+                            <constraint firstAttribute="bottom" secondItem="kRc-ST-SC8" secondAttribute="bottom" id="qcP-xM-P54"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BMG-tn-TqS" secondAttribute="bottom" id="Qgo-cp-Bbn"/>
+                <constraint firstItem="BMG-tn-TqS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eWD-ms-6an"/>
+                <constraint firstAttribute="trailing" secondItem="BMG-tn-TqS" secondAttribute="trailing" id="feL-pX-JEp"/>
+                <constraint firstItem="BMG-tn-TqS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jCY-pE-opN"/>
+            </constraints>
+            <size key="customSize" width="371" height="400"/>
+            <connections>
+                <outlet property="imageView" destination="kRc-ST-SC8" id="aXk-id-E0M"/>
+            </connections>
+            <point key="canvasLocation" x="206.87022900763358" y="109.85915492957747"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
